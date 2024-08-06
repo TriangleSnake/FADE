@@ -41,10 +41,10 @@ const observer = new MutationObserver((mutations) => {
         isMalicious(username.textContent).then(result => {
             console.log(username.textContent, result);
             if (result){
-                username.innerText += "✔";
+                username.innerText += "✅";
             }
             else {
-                username.innerText += "✖";
+                username.innerText += "❌";
             }
         })
         
